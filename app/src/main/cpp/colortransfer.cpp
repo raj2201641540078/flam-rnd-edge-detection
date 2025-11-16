@@ -22,10 +22,10 @@ Mat color_transfer(Mat &color_source,Mat &target,bool preserve_paper){
 
     // 计算原图像和目标图像的颜色统计信息
     //(lMeanSrc, lStdSrc, aMeanSrc, aStdSrc, bMeanSrc, bStdSrc)
-    vector<float> src_mean_std;
-    vector<float> tar_mean_std;
-    src_mean_std = image_status(source);
-    tar_mean_std = image_status(target);
+    // vector<float> src_mean_std;
+    // vector<float> tar_mean_std;
+    // src_mean_std = image_status(source);
+    // tar_mean_std = image_status(target);
 
     // 从目标图片减去均值
     vector<Mat> tar_labChannels; // (l,a,b)
